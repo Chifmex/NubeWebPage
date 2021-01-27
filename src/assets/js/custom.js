@@ -57,17 +57,19 @@ function myFunction() {
   }
 
 
-  if(window.pageYOffset < nosotros[0].offsetTop-1000) {
+  if(window.pageYOffset < nosotros[0].offsetTop-753) {
     var navbar_contacto = document.getElementsByClassName("nav_inicio"); 
     changeActive(navbar_contacto[0]);
     }
-
+  
+  console.log(proyectos[0].offsetTop);
+  console.log(window.pageYOffset)  
   if((window.pageYOffset > proyectos[0].offsetTop-100) && (window.pageYOffset < proyectos[0].offsetTop+100)){
     var navbar_proyectos = document.getElementsByClassName("nav_proyectos"); 
     changeActive(navbar_proyectos[0]);
   }
 
-  if((window.pageYOffset > nosotros[0].offsetTop) && (window.pageYOffset < nosotros[0].offsetTop+100)){
+  if((window.pageYOffset > nosotros[0].offsetTop-753) && (window.pageYOffset < nosotros[0].offsetTop+100)){
     var navbar_nosotros = document.getElementsByClassName("nav_nosotros"); 
     changeActive(navbar_nosotros[0]);
   }

@@ -353,12 +353,21 @@
         
     }
 
-
+    .subtitle{
+      font-size: .5em;
+    }
     
     .cuerpo{
-      background-color: black;
+      background-image:url('../assets/img/fondo_body.jpg');
+      background-size: 100% 100%;
     }
 
+
+    .titulo{
+      font-size: 4em;
+      color: white;
+      padding-bottom:50px;
+    }
     .Proyectos{
       text-align: center;
       padding: 100px 0%;
@@ -381,7 +390,6 @@
       margin-top: 10%;
       text-align: center;
       width: 50%;
-      height: 130px;
       background-color: orange;
       font-size: 1.2em;
       padding: 5% 5%;
@@ -391,7 +399,7 @@
       margin-top: 10%;
       text-align: center;
       width: 50%;
-      height: 130px;
+
       background-color: yellow;
       font-size: 1.2em;
       padding: 5% 5%;
@@ -401,7 +409,6 @@
       margin-top: 10%;
       text-align: center;
       width: 50%;
-      height: 130px;
       background-color:green;
       font-size: 1.2em;
       padding: 5% 5%;
@@ -426,10 +433,15 @@
 
     .contacto{
       background-color: #ff8500;
+      color: white;
     }
 
     .email_section{
       text-align: center;
+    }
+
+    .email_section p{
+      font-size: large;
     }
 
     .email_section input{
@@ -490,6 +502,11 @@
 
     .nav-item a{
       color:white !important;
+      font-size: medium;
+    }
+
+    .nav-item{
+      padding: 0 50px;
     }
 
     .navbar{
@@ -529,6 +546,13 @@
     }
 
     .row{margin-right: 0px !important;}
+
+
+    .navbar-nav{
+      float: right !important;
+      margin-left: auto !important;
+      margin-right: 0 !important;
+    }
 /*-------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------*/
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
