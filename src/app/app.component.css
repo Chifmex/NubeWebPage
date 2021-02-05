@@ -23,32 +23,6 @@
     margin: 0;
   }
 
-  .spacer {
-    flex: 1;
-  }
-
-  .toolbar {
-    height: 60px;
-    margin: -8px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover {
-    opacity: 0.8;
-  }
 
   .content {
     display: flex;
@@ -58,94 +32,7 @@
     flex-direction: column;
     align-items: center;
   }
-
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  .card svg.material-icons path {
-    fill: #888;
-  }
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
-
-  .card {
-    border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 200px;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-  }
-
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .card.card-small {
-    height: 16px;
-    width: 168px;
-  }
-
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(black, 0.35);
-  }
-
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
-
-  .card.highlight-card {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 60px;
-  }
-
-  svg#rocket {
-    width: 80px;
-    position: absolute;
-    left: -10px;
-    top: -24px;
-  }
-
-  svg#rocket-smoke {
-    height: 100vh;
-    position: absolute;
-    top: 10px;
-    right: 180px;
-    z-index: -10;
-  }
-
+  
   a,
   a:visited,
   a:hover {
@@ -157,58 +44,6 @@
     color: #125699;
   }
 
-  .terminal {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 6px;
-    padding-top: 45px;
-    margin-top: 8px;
-    overflow: hidden;
-    background-color: rgb(15, 15, 16);
-  }
-
-  .terminal::before {
-    content: "\2022 \2022 \2022";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background: rgb(58, 58, 58);
-    color: #c2c3c4;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 0;
-    padding: 14px 0;
-    text-indent: 4px;
-  }
-
-  .terminal pre {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    color: white;
-    padding: 0 1rem 1rem;
-    margin: 0;
-  }
-
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
 
   footer {
     margin-top: 8px;
@@ -222,45 +57,8 @@
     align-items: center;
   }
 
-  .github-star-badge {
-    color: #24292e;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px 10px;
-    border: 1px solid rgba(27,31,35,.2);
-    border-radius: 3px;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-    margin-left: 4px;
-    font-weight: 600;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-  }
-
-  .github-star-badge:hover {
-    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-    border-color: rgba(27,31,35,.35);
-    background-position: -.5em;
-  }
-
-  .github-star-badge .material-icons {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
-  }
-
-  svg#clouds {
-    position: fixed;
-    bottom: -160px;
-    left: -230px;
-    z-index: -10;
-    width: 1920px;
-  }
-
- 
-
   .image_carousel{
       width: 100%;
-      max-height: 835px;
       object-fit: cover;
   }
 
@@ -286,7 +84,8 @@
     background-color:gold;
     color: black;
     text-align: center;
-    padding: 40px 0px;
+    padding: 5vh 0px;
+    scroll-margin-top: 5em;
     }
 
     .contenido_nosotros{
@@ -299,19 +98,22 @@
     }
 
     
+    .row_puntos{
+      height: 55vh;
+    }
 
     .punto1{
         background-image:url(../assets/img/mision.jpg);
         background-repeat:no-repeat;
         background-size:cover;
         object-fit: fill;
-        height: 400px;
+        height: 100%;
         padding: 0% !important;
     }
 
     .punto1_color{
-        background-color:rgb(255,215,0,.6);
-        height: 400px;
+        background-color:rgba(0, 128, 0, 0.90);
+        height: 100%;
         width: 100%;
         text-align: center;
         font-size:7em;
@@ -324,17 +126,16 @@
         background-repeat:no-repeat;
         background-size:cover;
         object-fit: fill;
-        height: 400px;
+        height: 100%;
         padding: 0% !important;
     }
 
     .punto2_color{
-        background-color:	rgb(255,165,0,.6);
-        height: 400px;
+        background-color:	rgb(255,215,0,.9);
+        height: 100%;
         width: 100%;
         text-align: center;
         font-size:7em;
-       
     }
 
     .punto3{
@@ -342,21 +143,30 @@
         background-repeat:no-repeat;
         background-size:cover;
         object-fit: fill;
-        height: 400px;
+        height: 100%;
         padding: 0% !important;
     }
 
     .punto3_color{
-        background-color:rgb(0,128,0,.6);
-        height: 400px;
+        background-color:rgb(255,165,0,.9);
+        height: 100%;
         width: 100%;
         text-align: center;
         font-size:7em;
-        
+    }
+
+    .title{
+      font-size: 1em;
+      padding-top: 15vh;
     }
 
     .subtitle{
       font-size: .5em;
+      padding-top: 10vh;
+    }
+
+    .extra{
+      padding-top: 15vh !important;
     }
     
     .cuerpo{
@@ -368,16 +178,17 @@
     .titulo{
       font-size: 4em;
       color: white;
-      padding-bottom:50px;
+      padding-bottom:  5vh;;
       font-weight: bold;
     }
     .Proyectos{
       text-align: center;
-      padding: 100px 0%;
+      padding-top: 5%;
+      scroll-margin-top: 3em;
     }
 
     .Proyectos h2{
-      padding-bottom: 100px;
+      padding-bottom: 10vh;
       color: white;
       font-weight: bold;
     }
@@ -394,11 +205,12 @@
       margin-top: 10%;
       text-align: center;
       width: 70%;
-      background-color: orange;
+      background-color:#5BB23A;
+      box-shadow: 10px 10px #3a7226 !important ;
       font-size: 1.4em;
       padding: 5% 5%;
       border-radius: 15px;
-      min-height: 120px;
+      min-height: 10vh;
       font-weight: bold;
       color: black;
     }
@@ -408,11 +220,12 @@
       margin-top: 10%;
       text-align: center;
       width: 70%;
-      background-color: yellow;
+      background-color: #ff8500;
+      box-shadow: 10px 10px #b86002 !important ;
       font-size: 1.4em;
       padding: 5% 5%;
       border-radius: 15px;
-      min-height: 120px;
+      min-height: 10vh;
       font-weight: bold;
       color: black;
     }
@@ -422,28 +235,29 @@
       margin-top: 10%;
       text-align: center;
       width: 70%;
-      background-color:green;
+      background-color:#5BB23A;
+      box-shadow: 10px 10px #3a7226 !important ;
       font-size: 1.4em;
       padding: 5% 5%;
       border-radius: 15px;
-      min-height: 120px;
+      min-height: 10vh;
       font-weight: bold;
       color: black;
     }
 
     .Aliados{
       text-align: center;
-      padding: 100px 0%;
+      padding: 5% 0%;
+      scroll-margin-top: 3em;
     }
 
     .Aliados h2{
-      padding-bottom: 100px;
+      padding-bottom: 10vh;
       color: white;
       font-weight: bold;
     }
 
     .aliados_img{
-      border-radius: 10%;
       width: 70%;
     }
 
@@ -462,20 +276,22 @@
     }
 
     .email_section input{
-      padding: 10px 0;
-      margin: 10px 0;
+      padding: .5vh 0;
+      margin: 1vh 0;
       width: 70%;
       border-radius: 15px;
       text-align: center;
       font-size: larger;
+      border: none;
     }
   
     .mensaje{
       width: 80%;
-      height: 100px;
+      height: 10vh;
       border-radius: 15px;
       font-size: larger;
       height: 200px;
+      border: none;
     }
 
     .enviar{
@@ -495,7 +311,7 @@
     }
 
     .facebook{
-      margin: 40px 0px;
+      margin: 5vh 0px;
     }
 
     .logo_red_face{
@@ -508,7 +324,7 @@
 
 
     .navar_logo{
-      width: 80px !important;
+      width: 5vw !important;
     }
 
     .active{
@@ -523,7 +339,7 @@
     }
 
     .nav-item{
-      padding: 0 50px;
+      padding: 0 3vw;
     }
 
     .navbar{
@@ -554,9 +370,11 @@
     }
 
     .email_footer{
-      text-align: center;
-      padding-top: 5%;
+      text-align: end;
+      margin-top: 15vh;
     }
+
+    
 
     .footer_logo{
       width: 20%;
@@ -570,27 +388,112 @@
       margin-left: auto !important;
       margin-right: 0 !important;
     }
+
+
+    
+  .proy{
+    margin-bottom: 2vh;
+    }
+
+
+  .hexagonos{
+    background-color: black;
+    padding-bottom: 5%;
+    color: white;
+    scroll-margin-top: 5em;
+  } 
+
+  .hexLink{
+    color: white !important;
+  }
+    
+  .TitHexagono{
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    padding-top: 3%;
+    margin-bottom: 3% ;
+    }
 /*-------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------*/
   /* Responsive Styles */
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1367px) {
+    
+    .title{
+      font-size: .8em;
+      padding-top: 0;
+    }
 
-    .card-container > *:not(.circle-link) ,
-    .terminal {
+    .subtitle{
+      font-size: 30%;
+      width: 80%;
+      margin-left: 10%;
+      padding-top: 0 !important;
+    }
+
+
+    .footer_logo{
+      width: 40%;
+    }
+
+  }  
+
+
+
+  @media screen and (max-width: 767px) {
+    .hexLink p{
+      font-size: 2.5vw;
+    }
+    
+    .row_puntos{
+      height: 100%;
+    }
+
+    .punto1{
+      height: 30vh;
+    }
+    .punto2{
+      height: 30vh;
+    }
+    .punto3{
+      height: 30vh;
+    }
+
+    .title{
+      font-size: .6em;
+    }
+
+    .subtitle{
+      display: block !important;
+      font-size: 4vw;
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    
+
+    .footer_logo{
+      width: 60%;
+    }
+
+    .email_footer{
+      text-align: center;
+      padding-top: 10%;
+    }
+
+    .carrousel_images{
+      margin-top: 7vh;
+    }
+
+    .aliados_img{
       width: 100%;
     }
 
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
+    .navar_logo{
+      width: 10vw !important;
     }
 
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
+    .email_footer{
+      margin-top: 0;
     }
   }
 
@@ -601,9 +504,4 @@
     }
   }
 
-  /*$("#sidebar-hide-btn").click(function() {
-    $('#sidebar').hide();
-    $('#mapDiv').removeClass('col-lg-6');
-    $('#mapDiv').addClass('col-lg-8');
-});
-*/
+  

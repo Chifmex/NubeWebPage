@@ -23,7 +23,10 @@
               <a class="nav-link" href="#carrousel_images">Inicio <span class="sr-only">(current)</span></a>
             </li>
       
-            
+      <li class="nav-item nav_hexagonos" onclick="changeActive(this)">
+              <a class="nav-link" href="#hexagonos">Problemas <span class="sr-only"></span></a>
+            </li>
+      
       <li class="nav-item nav_nosotros" onclick="changeActive(this)">
               <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
@@ -38,13 +41,7 @@
 
             <li class="nav-item nav_contactos" onclick="changeActive(this)">
               <a class="nav-link" href="#contacto">Contactos</a>
-            </li>
-            
-      
-      
-            
-      
-      
+            </li> 
           </ul>
       
   
@@ -82,46 +79,141 @@
     </div>
   </div>
 
-  <!-- Mision -------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-  <div class="mision" id="nosotros">
+  <!-- Prueba ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="hexagonos" id="hexagonos" >
+
+  <div>
+    <p class="TitHexagono" ></p>
+  </div>
+  <div class="mision" >
     <div class="contenido_mision">
       <h1>Nutrición, Bienestar y Educación para niños y adolescentes</h1>
     </div>
   </div>
+  <ul id="hexGrid">
+    <li class="hex">
+      <div class="hexIn">
+        <a class="hexLink" >
+          <img src="../assets/img/img1-min.jpg" alt="" />
+          <h1>Alimentación escencial</h1>
+          <p>La alimentación en los primeros cinco años de vida es fundamental para evitar la desnutrición infantil
+          </p>
+        </a>
+      </div>
+    </li>
+    <li class="hex">
+      <div class="hexIn">
+        <a class="hexLink" >
+          <img src="../assets/img/img2-min.jpg" alt="" />
+          <h1>Alimentación adecuada</h1>
+          <p>Reducción de riesgo de desarrollar enfermedades</p>
+        </a>
+      </div>
+    </li>
+    <li class="hex">
+      <div class="hexIn">
+        <a class="hexLink" >
+          <img src="../assets/img/img3-min.jpg" alt="" />
+          <h1>La OMS</h1>
+          <p>Según la OMS, México puede ser considerado como un país mayoritariamente malnutrido</p>
+        </a>
+      </div>
+    </li>
+    <li class="hex">
+      <div class="hexIn">
+        <a class="hexLink" >
+          <img src="../assets/img/img4-min.jpg" alt="" />
+          <h1>Obesidad Infantil</h1>
+          <p>México ocupa el primer lugar mundial en obesidad infantil</p>
+        </a>
+      </div>
+    </li>
+    <li class="hex">
+      <div class="hexIn">
+        <a class="hexLink">
+          <img src="../assets/img/img5-min.jpg" alt="" />
+          <h1>Población indígena</h1>
+          <p>Debido a la carencia de oportunidades la población indígena suele ser mas desnútrida</p>
+        </a>
+      </div>
+    </li>
+    <li class="hex">
+      <div class="hexIn">
+        <a class="hexLink" >
+          <img src="../assets/img/img6-min.jpg" alt="" />
+          <h1>Desnutrición crónica</h1>
+          <p>1 de cada 8 niñas y niños menores de 5 años padece desnutrición crónica</p>
+        </a>
+      </div>
+    </li>
+    <li class="hex">
+      <div class="hexIn">
+        <a class="hexLink" >
+          <img src="../assets/img/img7-min.jpg" alt="" />
+          <h1>Leche materna</h1>
+          <p>solamente 3 de cada 10 bebés se alimentan únicamente con leche materna durante sus primeros 6 meses de vida</p>
+        </a>
+      </div>
+    </li>
+    <li class="hex">
+      <div class="hexIn">
+        <a class="hexLink" >
+          <img src="../assets/img/img8-min.jpg" alt="" />
+          <h1>Ejercicio Diario</h1>
+          <p>En México los niños realizan ejercicio aproximadamente 21 minutos al día; lo ideal son 60 minutos</p>
+        </a>
+      </div>
+    </li>
+    <li class="hex">
+      <div class="hexIn">
+        <a class="hexLink" >
+          <img src="../assets/img/img9-min.jpg" alt="" />
+          <h1>Sedentarismo</h1>
+          <p>Los niños entre 4 y 6 años destinan 9 horas diarias a actividades sedentarias</p>
+        </a>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+<div  ></div>
+
+  <!-- Mision -------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
 
   <!-- Nosotros ------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-  <div class="nosotros">
-    <div class="contenido_nosotros">
+  <div class="nosotros" id="nosotros">
+    <div class="contenido_nosotros" >
       <p class="titulo" style="color: black;">Nosotros</p>
     </div>
     <div class="contenido_nosotros">
-      <h4>Nuestro objetivo principal es fomentar la educación alimentaria, junto con un entorno alimentario saludable, para generar bienestar y hábitos saludables en niños y adolescentes</h4>
+      <h2>Nuestro objetivo principal es fomentar la educación alimentaria, junto con un entorno alimentario saludable, para generar bienestar y hábitos saludables en niños y adolescentes</h2>
     </div>
   </div>
 
 
   <!-- Puntos importantes ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
   <div class="puntos">
-    <div class="row">
-      <div onmouseover="bigArea(this)" onmouseout="normalArea(this)" class="col punto1">
+    <div class="row row_puntos">
+      <div onmouseover="bigArea(this)" onmouseout="normalArea(this)" class="col-md-4 punto1 col-sm-12 subpunto">
         <div class="punto1_color">
           <p class="title">Misión</p>
-          <p class="subtitle" style="display: none;">“Somos sembradores de oportunidades para los niños y su entorno familiar en México, formando y cubriendo sus necesidades básicas en la búsqueda 
+          <p class="subtitle extra" style="display: none;">“Somos sembradores de oportunidades para los niños y su entorno familiar en México, formando y cubriendo sus necesidades básicas en la búsqueda 
             de mejorar su calidad de vida”.
             </p>
         </div>
       </div>
-      <div  onmouseover="bigArea(this)" onmouseout="normalArea(this)" class="col punto2">
+      <div  onmouseover="bigArea(this)" onmouseout="normalArea(this)" class="col-md-4 punto2 col-sm-12 subpunto" >
         <div class="punto2_color">
           <p class="title">Visión</p>
           <p class="subtitle" style="display: none;">“Ser una organización modelo y de preferencia, capaz de fortalecer y proveer a las familias, especialmente a los niños (as) y jóvenes, valores y oportunidades que contribuyan a su crecimiento integral permitiéndoles ser agentes de cambio positivo en nuestra sociedad”.
           </p>
         </div>
       </div>
-      <div  onmouseover="bigArea(this)" onmouseout="normalArea(this)" class="col punto3">
+      <div  onmouseover="bigArea(this)" onmouseout="normalArea(this)" class="col-md-4 punto3 col-sm-12 subpunto">
         <div class="punto3_color">
           <p class="title">Valores</p>
-          <p class="subtitle" style="display: none;">Amor al prójimo y a si mismo, Solidaridad, Respeto, Responsabilidad, Espíritu de lucha, Bienestar y Vocación de servicio.
+          <p class="subtitle extra" style="display: none;">Amor al prójimo y a si mismo, Solidaridad, Respeto, Responsabilidad, Espíritu de lucha, Bienestar y Vocación de servicio.
           </p>
         </div>
       </div>
@@ -132,19 +224,19 @@
     <div class="Proyectos" id="Proyectos"> 
       <p class="titulo"> Proyectos</p>
       <div class="row">
-        <div class="col">
+        <div class="col-md-4 col-sm-12 proy">
           <img class="proyectos_img" src="../assets/img/proyecto1.jpg">
           <div class="proyectos_texto1">
             <p >FOMENTAR LA EDUCACIÓN ALIMENTARIA</p>
           </div> 
         </div>
-        <div class="col">
+        <div class="col-md-4 col-sm-12 proy">
           <img class="proyectos_img" src="../assets/img/proyecto2.jpg">
           <div class="proyectos_texto2">
             <p>PLÁTICAS Y TALLERES</p>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-4 col-sm-12 proy">
           <img class="proyectos_img" src="../assets/img/proyecto3.jpg">
           <div class="proyectos_texto3">
             <p>SERVICIO SOCIAL CON ALUMNOS DEL TEC DE MONTERREY</p>
@@ -159,23 +251,26 @@
       </div>
     </div>
   </div>
+
+
+
 <!-- Contacto ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
   <div class="contacto" id="contacto">
   <div class="row">
-    <div class="email_section col-6">
+    <div class="email_section col-md-6 col-sm-12">
       <h2>Contáctanos</h2>
       <p>¿Te gustaria ser parte de nuestro equipo o ser voluntario?</p>
 
-      <form action="mailto:pichardovicencio@gmail.com" method="POST" enctype="text/plain">
+      <form action="mailto:contacto@fundacionnube.org" method="POST" enctype="text/plain">
         
         <div class="row">
-          <div class="col-6">
+          <div class="col-sm-6 col-md-6">
             <input class="nombre" type="text" name="nombre" placeholder="Nombre">
             <input class="telefono"  type="text" name="telefono" placeholder="Teléfono">
           </div>
-          <div class="col-6">
-            <input class="email" type="email" name="email" placeholder="Email">
+          <div class="col-sm-6 col-md-6">
+              <input class="email" type="email" name="email" placeholder="Email">
             <input class="ciudad" type="text" name="ciudad" placeholder="Ciudad">
           </div>
         </div>
@@ -185,7 +280,7 @@
       </form>
       
     </div>
-    <div class="redes col-6">
+    <div class="redes col-md-6 col-sm-12">
       <h2>Siguenos en redes</h2>
       
         <div class="facebook">
@@ -211,14 +306,14 @@
   <!--Footer ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
   <div class="footer">
     <div class="row">
-      <div class="info col-6">
+      <div class="info col-md-6 col-sm-12">
         <img class="footer_logo" src="../assets/img/Logo_NuBe.png">
         <br>
         <p>Fundación NuBe- México 2020. Todos los derechos reservados.</p>
         <p>Imagenes obtenidas en freepik - www.freepik.es</p>
       </div>
-      <div class="email_footer col-6">
-        <h3>NuBe@gmail.com</h3>
+      <div class="email_footer col-md-6 col-sm-12">
+        <p>contacto@fundacionnube.org</p>
       </div>
     </div> 
   </div>

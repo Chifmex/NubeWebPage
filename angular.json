@@ -25,6 +25,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
+              "src/assets/css/hexagons.css",
               "src/styles.css"
             ],
             "scripts": [
